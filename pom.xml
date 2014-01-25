@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tagmanager</artifactId>
-    <version>3.0.2-SNAPSHOT</version>
+    <version>2.4.3-SNAPSHOT</version>
     <name>Tags Manager</name>
     <description>WebJar for Tags Manager</description>
     <url>http://webjars.org</url>
@@ -49,7 +49,7 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>3.0.1</upstream.version>
+        <upstream.version>2.4.3</upstream.version>
         <upstream.url>https://raw.github.com/max-favilli/tagmanager/v${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
@@ -69,7 +69,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>tagmanager.js</fromFile>
+                            <fromFile>bootstrap-tagmanager.js</fromFile>
                             <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>
@@ -81,7 +81,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>tagmanager.css</fromFile>
+                            <fromFile>bootstrap-tagmanager.css</fromFile>
                             <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>
@@ -93,7 +93,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>tagmanager.less</fromFile>
+                            <fromFile>bootstrap-tagmanager.less</fromFile>
                             <toDir>${destDir}</toDir>
                         </configuration>
                     </execution>
